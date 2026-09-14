@@ -187,7 +187,12 @@ a:hover{ color: var(--blue-mid); }
 .hero-note{ font-size: .78rem; color: #9db6dd; max-width: 48ch; }
 
 .hero-visual{ display: flex; justify-content: center; }
-.hero-svg{ width: 100%; max-width: 380px; }
+.hero-photo{
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 45px rgba(0,0,0,.35);
+}
 
 /* ---------- Sections ---------- */
 .section{ padding: 80px 0; }
