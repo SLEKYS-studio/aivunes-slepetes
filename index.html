@@ -55,20 +55,56 @@
       </div>
       <div class="hero-visual" aria-hidden="true">
         <svg viewBox="0 0 400 300" class="hero-svg">
-          <rect x="0" y="0" width="400" height="300" rx="24" fill="url(#g1)"/>
           <defs>
             <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0%" stop-color="#1450a3"/>
               <stop offset="100%" stop-color="#0a2c63"/>
             </linearGradient>
+            <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#dcebff"/>
+              <stop offset="100%" stop-color="#9fc3f0"/>
+            </linearGradient>
+            <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#000" stop-opacity=".35"/>
+              <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+            </radialGradient>
           </defs>
-          <g fill="none" stroke="#bcd8ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M60 190 L100 120 L300 120 L340 190" />
-            <rect x="50" y="190" width="300" height="50" rx="16" />
-            <circle cx="110" cy="240" r="22" fill="#0a2c63" stroke="#bcd8ff"/>
-            <circle cx="290" cy="240" r="22" fill="#0a2c63" stroke="#bcd8ff"/>
+
+          <rect x="0" y="0" width="400" height="300" rx="24" fill="url(#g1)"/>
+
+          <!-- ground shadow -->
+          <ellipse cx="205" cy="223" rx="150" ry="16" fill="url(#shadow)"/>
+
+          <!-- sleek electric sedan silhouette (original illustration) -->
+          <path d="M58,206
+                   C60,178 76,154 100,144
+                   C118,136 130,127 148,119
+                   C168,109 197,103 227,103
+                   C260,103 290,111 312,125
+                   C328,135 339,150 347,165
+                   C352,175 352,191 347,201
+                   L347,206 Z"
+                fill="url(#carBody)" stroke="#e9f3ff" stroke-width="2"/>
+
+          <!-- side character line -->
+          <path d="M96,178 C150,186 260,186 320,168" fill="none" stroke="#6ea3dd" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- front light bar (EV-style closed fascia) -->
+          <rect x="55" y="150" width="30" height="8" rx="4" fill="#ffe08a"/>
+
+          <!-- rear light -->
+          <rect x="335" y="150" width="16" height="7" rx="3.5" fill="#ff9b6a"/>
+
+          <!-- roofline glass -->
+          <path d="M150,118 C168,109 197,103 227,103 C252,103 275,108 294,117 L282,124 C262,116 244,113 227,113 C204,113 182,118 165,126 Z" fill="#0a2c63" opacity=".55"/>
+
+          <!-- wheels -->
+          <g>
+            <circle cx="130" cy="206" r="26" fill="#0a2c63" stroke="#bcd8ff" stroke-width="4"/>
+            <circle cx="130" cy="206" r="11" fill="none" stroke="#7fb2f5" stroke-width="3"/>
+            <circle cx="300" cy="206" r="26" fill="#0a2c63" stroke="#bcd8ff" stroke-width="4"/>
+            <circle cx="300" cy="206" r="11" fill="none" stroke="#7fb2f5" stroke-width="3"/>
           </g>
-          <path d="M150 150 l20 -20 l20 20 M170 130 v50" stroke="#7fb2f5" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
     </div>
